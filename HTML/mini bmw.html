@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>anv motors</title>
+  <style>
+ body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #111;
+    color: white;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .account-icon {
+    font-size: 0.9rem;
+    color: #ccc;
+  }
+  
+  .hero {
+    position: relative;
+    background-image: url('https://www.bmw-navnitmotors-mumbai.in/sites/default/files/2022-09/M8_1680x756%20%281%29.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .slider {
+  width: 100%;
+  height: 510px;
+  position: relative;
+}.slider img {
+  width: 100%;
+  height: 500px
+  position absolute;
+  top: 0;
+  left: 0;
+}
+
+.slider img:first-child {
+  z-index: 4;
+}
+
+.slider img:second-child {
+  z-index: 4;
+}
+.slider img:third-child {
+  z-index: 4;
+}
+.slider img:fourth-child {
+  z-index: 4;
+}
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-buttons .button {
+    display: inline-block;
+    margin: 0 0.5rem;
+    padding: 0.7rem 1.5rem;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .hero-buttons .button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
+  }
+  
+  .models {
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  
+  .models h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .model-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  
+  .model-card {
+    background-color: #f7f7f7;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .model-card img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  .model-card h3 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+  .model-card h3:hover{
+    color: rgb(9, 255, 0);
+  }
+  .model-card p {
+    font-size: 0.9rem;
+    color: #0a0a0a;
+  }
+</style>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+        <a href="#"><img src="https://www.bmw-navnitmotors-mumbai.in/themes/custom/bmw/images/BMW_White_Logo.svg" alt="bmw"></a>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Vehicles</a></li>
+        <li><a href="#">Electric</a></li>
+        <li><a href="#">Performance</a></li>
+        <li><a href="#">Build & Price</a></li>
+        <li><a href="#">Find a Dealer</a></li>
+        <li><a href="#">Offers</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="account-icon">Account</div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+    <h1>Introducing the All-New M8</h1>
+      <p>Progress you can feel</p>
+      <div class="hero-buttons">
+        <a href="#" class="button">Explore Model</a>
+        <a href="#" class="button">Build & Price</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="models">
+    <h2>Featured Models</h2>
+    <div class="model-grid">
+      <div class="model-card">
+        <img src="https://www.bmw-navnitmotors-mumbai.in/sites/default/files/2023-01/THE-NEW-X1-1366x450.jpg" alt="Car Model 1">
+        <h3>X1</h3>
+        <p>Compact luxury for the city</p>
+      </div>
+      <div class="model-card">
+        <img src="https://www.bmw-navnitmotors-mumbai.in/sites/default/files/2023-03/X3.png" alt="X3">
+        <h3>X3</h3>
+        <p>The exquisite feel of luxury meets the exhilarating zeal of performance</p>
+
+    </div>
+      <div class="model-card">
+        <img src="https://www.bmw-navnitmotors-mumbai.in/sites/default/files/2023-01/1366x450_0.jpg" alt="Car Model 2">
+        <h3>X7</h3>
+        <p>The luxury SUV, redefined</p>
+      </div>
+    </div>
+    <div class="model-grid">
+        <div class="model-card">
+            <img src="https://www.bmw-navnitmotors-mumbai.in/sites/default/files/2023-05/banner.png" alt="z4">
+            <h3>Z4 M40i</h3>
+            <p>dynamics of a sports car with the freedom of a roadster</p>
+        </div>
+        
+        <div class="model-card">
+            <img src="https://www.bmw-navnitmotors-mumbai.in/sites/default/files/2024-05/m4-1366x450.jpg" alt="Car Model 3">
+            <h3>M4 CS </h3>
+            <p>performance, no compromise</p>
+        </div>
+        <div class="model-card">
+            <img src="https://www.bmw-navnitmotors-mumbai.in/sites/default/files/2022-09/1366x450%20%282%29.jpg" alt="Car Model 3">
+            <h3> M8 COMPETITION COUPÉ </h3>
+            <p>Strength, elegance and aerodynamic finesse all come together</p>
+        </div>
+
+    </div>
+  </section>
+</body>
+</html>

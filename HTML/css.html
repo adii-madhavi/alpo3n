@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Quadrant Layout</title>
+</head>
+<body><style>
+ {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 100vh;
+}
+
+.quadrant {
+  padding: 20px;
+  border: 2px solid #ccc;
+}
+
+.image {
+  background-color: #e0e0ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.description {
+  background-color: #ffe0e0;
+  color: #333;
+}
+
+.video-description {
+  background-color: #e0ffe0;
+  color: #333;
+}
+
+.video {
+  background-color: #ffe0ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video video {
+  max-width: 100%;
+  height: auto;
+}</style>
+    <div class="container">
+        <div class="quadrant image"> 
+            <img src="your-image.jpg" alt="Description of image">
+        </div>
+        <div class="quadrant description">
+            <h2>Image Description</h2>
+            <p>This is a description of the image displayed in the first quadrant.</p>
+        </div>
+        <div class="quadrant video-description">
+            <h2>Video Description</h2>
+            <p>This is a description of the video displayed in the fourth quadrant.</p>
+        </div>
+        <div class="quadrant video">
+            <video controls>
+                <source src="your-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+
+</body>
+</html>

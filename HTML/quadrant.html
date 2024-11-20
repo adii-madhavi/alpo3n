@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Quadrant Layout</title>
+</head>
+<body><style>
+ 
+
+body 
+{
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container 
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 100vh;
+}
+
+.quadrant
+ {
+  padding: 20px;
+  border: 2px solid #ccc;
+}
+
+.image
+ {
+  background-color: #e0e0ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.description 
+{
+  background-color: #ffe0e0;
+  color: #333;
+}
+
+.video-description
+{
+  background-color: #e0ffe0;
+  color: #333;
+}
+
+.video
+ {
+  background-color: #ffe0ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+ }
+</style>
+    <div class="container">
+        <div class="quadrant image"> 
+            <img src="https://pbs.twimg.com/media/F-Fs4wqbQAAhI4r.jpg:large" alt="Description of image" width="700px">
+        </div>
+        <div class="quadrant description">
+            <h2 style="font-size: x-large;"><B> Image Description</h2></b>
+            <p style="font-size: x-large;"> Attack on titan  is set in a world where humanity is forced to live in cities surrounded by three enormous walls that protect them from gigantic man-eating humanoids 
+              referred to as Titans; the story follows Eren Yeager, who vows to exterminate the Titans after they bring about the destruction of his hometown and the 
+              death of his mother here the image is of the student of cadet corpse 104 which consist of eren yeager and his friend</p>
+        </div>
+        <div class="quadrant video-description">
+            <h2 style="font-size: x-large;">Video Description</h2>
+            <p style="font-size: x-large;">This video is about the battle between levi the squad captain and the beast titan i.e zeke yeager when zeke tried to kill the
+                 people on eldia.In this fight cadet corps hat lost their captain.levi was able to corner zeke but peek became a hindrance due to which zeke could escape
+                from levi </p>
+        </div>
+        <div class="quadrant video">
+            <h2 style="font-size: x-large;align-self: flex-start;">Video</h2>
+            <video controls width="700px">
+                <source src="aot.mp4" type="video/mp4"  >
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+
+</body>
+</html>

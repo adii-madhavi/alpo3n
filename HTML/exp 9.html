@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Portfolio Template</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #1c1f2b;
+            overflow-x: hidden;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 15vh;
+            background: linear-gradient(160deg, rgba(31, 29, 29, 0.733), rgba(20, 2, 34, 0.658));
+            backdrop-filter: blur(20px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+            /* navbar shadow */
+        }
+
+        .navbar button {
+            background: linear-gradient(145deg, #e0e0e0, #c7c7c7);
+            color: black;
+            border: 2px solid #b5b5b5;
+            border-radius: 20px;
+            padding: 12px 30px;
+            margin: 0 15px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            font-weight: 700;
+        }
+
+        .navbar button:hover {
+            background: rgb(0, 26, 255);
+            color: white;
+            border-color: white;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        .content {
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+            opacity: 0;
+            transform: translateX(100%);
+            animation: show_right 1s forwards ease-in-out;
+            align-items: left;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        @property --angle {
+            syntax: "<angle>";
+            initial-value: 0deg;
+            inherits: false;
+        }
+
+        .about-me {
+            background-image: url(https://wallpapers-clan.com/wp-content/uploads/2024/03/starfall-night-sky-mountains-aesthetic-gif-preview-desktop-wallpaper.gif);
+        }
+        .section-proj{
+            width: 100%;
+            height: 50vh;
+            position: relative;
+            display: flex;
+            flex: 1;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            padding: 5em;
+            width: 400px;
+            background: #1c1f2b;
+            text-align: center;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .card::after,
+        .card::before {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+            top: 50%;
+            left: 50%;
+            translate: -50% -50%;
+            z-index: -1;
+            padding: 3px;
+            border-radius: 10px;
+            animation: 15s spin linear infinite;
+        }
+
+        .card::before {
+            filter: blur(1.5rem);
+            opacity: 0.5;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: xx-large;
+            font-weight: 700;
+        }
+
+        p,
+        ul {
+            text-align: center;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        @keyframes show_right {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+
+        @keyframes spin {
+            from {
+                --angle: 0deg;
+            }
+
+            to {
+                --angle: 360deg;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <button>About Me</button>
+        <button>My Projects</button>
+        <button>Contact</button>
+        <button>Services</button>
+    </div>
+
+    <div class="content about-me">
+        <h2>About Me</h2>
+        <p>
+            I am a student at SAKEC, pursuing a <b style="color: rgb(255, 0, 221);">B.Tech in Computer Engineering</b>.
+            I have a keen interest in software development and enjoy exploring the latest technologies to create
+            impactful solutions.
+            My journey began with a passion for problem-solving, which led me to develop skills in HTML, CSS, and C++. I
+            am now broadening my expertise to include JavaScript frameworks and backend development.
+            Beyond academics, I actively participate in hackathons, coding competitions, and tech meetups to hone my
+            collaborative and technical skills. I aspire to innovate and contribute to the tech industry through
+            dedication and creativity.
+        </p>
+    </div>
+    <h2 style="color: rgb(230, 0, 0); margin-top: 30px;">My Projects</h2>
+    <div class="section-proj">
+        <div class="card" >
+            <h2>Proj1-Organizer</h2>
+            <p> A program that organiges the documnets as per the data within it.
+            <p>
+        </div>
+        <div class="card">
+            <h2> Proj2-IRCTC Railway Booking System Clone </h2>
+            <p>A clone of the IRCTC system that simulates ticket booking and management.</p>
+
+        </div>
+
+    </div>
+
+        <h2>Contact</h2>
+        <ul>
+            <li>Phone: +91 XXXXX X1876</li>
+            <li>Email: alpo3n@gmail.com</li>
+        </ul>
+</body>
+
+</html>
